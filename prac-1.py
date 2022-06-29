@@ -12,3 +12,15 @@ weather = "It\'s \"kind of\" sunny today " #Escape Sequence "Whatever comes afte
 #\t adds tab
 #\n new line
 print(weather)
+
+print(f"my name is {first_name} and my surname is {last_name}") #formatted strings ~ f string
+
+si = "01234567"
+print(si[0:5:2]) #String Indexes ~ [Start:Stop:Stepover]
+print(si[::-1]) #reverses the order
+#Strings are immutable(cannot be chnaged). The only way it can be  changed is by completely reassigning
+#String methods ~ .replace('','') .capitalize(), .format, .upper()
+
+#Boolean- True and False
+#0=false, 1=true
+print(bool(9))

@@ -1,6 +1,6 @@
 print (type('hello world'))
 
-first_name = "Chu"
+first_name = "Chu" #assigns to a variable
 last_name = "Theko"
 full_name = first_name + " " + last_name
 
@@ -24,3 +24,10 @@ print(si[::-1]) #reverses the order
 #Boolean- True and False
 #0=false, 1=true
 print(bool(9))
+
+birth_year = input("what year were you born?")
+
+age = 2022 - int(birth_year) #type conversion is needed in order to do mathematical opertions
+
+print(f" You are {age} years old")
+

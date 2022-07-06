@@ -38,3 +38,30 @@ print(dictionary)
 my_tuple = (1,1,2,3,4,5)
 print(my_tuple.count(1))#returns how many times thet value occurs
 print(my_tuple.index(2))#returns the index of the item in brackets
+
+#Sets
+#unorderede collections of unique objects
+my_set = {1,2,3,4,5}
+my_set2 = {1,2,3,4,5,5}# cannot be any duplicates in a set
+my_set.add(100)#adds to the list
+
+#make list into a set
+list_to_set = [1,2,2,3,4,5,5]
+print(set(list_to_set))#removes duplicate values
+
+
+print(1 in my_set)#check in value exsists in set
+print(list(my_set))#turns set into list
+
+new_set= my_set.copy()#makes duplicate of set
+
+my_set.clear()#clears set
+
+my_set.difference(my_set2)#finds difference between sets
+my_set.discard(5)#removes item from set
+my_set.difference_update(my_set2)#removes all elements of a another set from this set
+my_set.intersection(my_set2)#prints out what is the same in both sets. Shorthand ~ print(my_set & my_set2)
+my_set.isdisjoint(my_set2)#checks if they have anything in common. Prints out a boolean value. 
+my_set.union(my_set2)# returns a new set with the sets joined together with no duplicates. Shorthand ~ (my_set | my_set2)
+my_set.issubset(my_set2)# Checks if all of the set is in the set within the brakets. Reutrns boolean
+my_set2.issuperset(my_set) # Opposite of issubset. Returns boolean 

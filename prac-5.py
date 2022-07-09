@@ -28,4 +28,17 @@ for item in user.keys(): #method to get all keys
 for item in user.values():#method to get all values
     print(item)    
 
+#212~ Exercise
+#counter
+
+my_list = [1,2,3,4,5,6,7,8,9,10]
+total = 0
+
+for item in my_list:
+    
+    total = total + item
+    
+print(total)    
+
+
    

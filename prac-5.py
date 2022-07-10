@@ -10,7 +10,7 @@ for item in (1,2,3,4,5):
 
 #Iterables
 # 
-#Iterable -> List, dict, set, tuple, string     
+#Iterable -> List, dict, set, tuple, string and range  
 #Iterate -> One by one check each item in a collection
 
 user = {
@@ -32,13 +32,15 @@ for item in user.values():#method to get all values
 #counter
 
 my_list = [1,2,3,4,5,6,7,8,9,10]
-total = 0
+
+total = 0 #The counter needed to be out here because if it was in the loop, it would be set to 0 every time
 
 for item in my_list:
     
     total = total + item
-    
+    #If you put the print here, it will get looped over as well in the code block
 print(total)    
 
-
+# Range 
+# Returns an object that produces a sequence of integers from start to stop by step.
    

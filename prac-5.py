@@ -43,4 +43,35 @@ print(total)
 
 # Range 
 # Returns an object that produces a sequence of integers from start to stop by step.
+for number in range(0,10,2):
+    print(number)
+for _ in range(10,0,-1):
+    print(_)
+#If you want to do something in reverse, add a -1
+
+for ql in range(2):
+    print(list(range(10)))#Quick way to create a list with integers
+
+#Enumertate
+#takes in an iterable object and returns an index counter
+
+for i,char in enumerate(list(range(100))):
+    if char == 50:
+        print(f'Char 50 is {i}')
+
+#While Loop
+#while condition:
+    #do something
+
+
+i=0
+while i <50: #Will create an infinite loop
+    print("Nothing")
+    break#Stops code from running again
+
+while i<50:
+    print(i)
+    i+=1
+
+#We can break out of a while loop if a condition can be turned into false    
    

@@ -35,6 +35,11 @@ matrix =[
     [1,0,1]
     
     ]
+
+#For a matrix, you must loop withing the first loop
+
+
+
 #Lists
 #Some List methods dont return values, they change the list you give it
 basket=[1,2,3,4,5]  

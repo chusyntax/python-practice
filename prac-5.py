@@ -4,6 +4,7 @@
 #Iterable~ Something that is able to get looped over
 #For Loops allow us to iterate over anything that has a collection of items
 #You can nest loops in loops
+#Break keyword works with for loops
 
 for item in (1,2,3,4,5):
     print(item)
@@ -73,5 +74,71 @@ while i<50:
     print(i)
     i+=1
 
-#We can break out of a while loop if a condition can be turned into false    
-   
+#We can break out of a while loop if a condition can be turned into false  
+# while loops also can have else blocks  
+#Else executes only if there is a break
+
+
+#For looping through a list with while loop
+my_list = [1,2,3]
+
+l=0
+
+while l < len(my_list):
+    print(my_list[l])
+    l+=1
+
+#While loops are flexible and fgor loops are simpler to read
+#While loop = while something is true, just keep looping
+#NB   For while loops you need to create a variable and remember to incriment the variable
+
+
+#Break breaks out of the current enclosing loop
+#Continue - continue onto the top of the current enclosing loop
+#Pass - Does nothing, just used as a placeholder - Used when trying to avoid bugs
+
+#Exercise
+
+picture =[
+    [0,0,0,1,0,0,0],
+    [0,0,1,1,1,0,0],
+    [0,1,1,1,1,1,0],
+    [1,1,1,1,1,1,1],
+    [0,0,0,1,0,0,0],
+    [0,0,0,1,0,0,0],
+    ]
+
+for row in picture:
+
+   for pixel in row: #Loop within a loop since it is a matrix
+    if pixel == 0:
+        print(' ', end = '') #End = '' prevents the print from starting on a new line
+
+    elif pixel == 1:
+       print('*', end='')    #End = '' prevents the print from starting on a new line
+
+   print('') # Need a new line after every row is looped over
+
+#Clean good code
+
+#No unnessesary skipped lines
+#No uncessesary comments
+# Not too complicated
+# Spaced out evenly   
+#Namiong variables properly
+#DRY - Donot Repeat Yourself
+#make code reusable
+
+
+#Exercise
+#Check for duplicates in a list
+
+some_list = ['a', 'b', 'c', 'd','e', 'b', 'n', 'n']
+duplicate = []#first create a empty list where which you will populate with the duplicates
+for letter in some_list:
+    if some_list.count(letter) > 1: #to check if it occurs more than once
+        if letter not in duplicate:
+         duplicate.append(letter) #Append value to the list
+
+print(duplicate)     
+

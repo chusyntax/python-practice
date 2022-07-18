@@ -44,6 +44,7 @@ elif is_magician and not(is_expert):
     print("Atleast you're getting there")
 elif not(is_magician):
     print("You need magic powers")
+    
 
 #Double equal checks for equality of value
 #The 'is' keyword checks if the two values have the same location in memory (has to be exact same thing)

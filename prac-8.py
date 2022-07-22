@@ -35,8 +35,6 @@ class PlayerCharacter:
 # Two underscores = Dunder method
 
 
-player1 = PlayerCharacter()
-
 # FIrst parameter of class should always be self
 
 # Remeber that when a function doesnt returrn anyhing, we get None
@@ -45,3 +43,26 @@ player1 = PlayerCharacter()
 # One needs to use self. for function parameters
 
 # __init__ can be used to add different controls and safeguards to make sure we recieve the right data type in order to create the object
+
+# Cat Exercise
+
+
+class Cat:
+    species = 'mammal'
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+cat1 = Cat("Tom", 18)
+cat2 = Cat("Timmy", 19)
+cat3 = Cat("Blxkie", 20)
+
+
+def oldest_cat(*args):
+    return max(args)
+
+
+print(
+    f'the oldest cat is {oldest_cat(cat1.age, cat2.age, cat3.age)} years old')

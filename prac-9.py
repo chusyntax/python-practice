@@ -49,3 +49,55 @@ class PlayerCharacter:
 
 # Everything in python falls under the object instance  ~ Thats where all the methods come from
 # Every class has (object) in its parameters by default
+
+# 4) Polymorphism (Many forms)
+# The way in whcih object classes share the same method name but act differently based on what pbject calls them
+# Allows us to have many forms and re-define methods
+# An object that gets instanciated can behave in diffrent ways due because of Polymorphism
+
+class Pets():
+    animals = []
+
+    def __init__(self, animals):
+        self.animals = animals
+
+    def walk(self):
+        for animal in self.animals:
+            print(animal.walk())
+
+
+class Cat():
+    is_lazy = True
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def walk(self):
+        return f'{self.name} is just walking around'
+
+
+class Simon(Cat):
+    def sing(self, sounds):
+        return f'{sounds}'
+
+
+class Sally(Cat):
+    def sing(self, sounds):
+        return f'{sounds}'
+
+
+class Tom(Cat):
+    def sing(self, sounds):
+        return f'{sounds}'
+
+
+# 2 Create a list of all of the pets (create 3 cat instances from the above)
+my_cats = [Simon('Simon', 4), Sally('Sally', 21), Tom('Tom', 1)]
+
+# 3 Instantiate the Pet class with all your cats
+my_pets = Pets(my_cats)
+
+# 4 Output all of the cats singing using the my_pets instance
+print(my_pets.walk())
+print(Tom.walk())

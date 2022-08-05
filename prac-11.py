@@ -125,3 +125,27 @@ print(list(filter(over_50, scores)))
 # 4 Combine all of the numbers that are in a list on this file using reduce (my_numbers and scores). What is the total?
 
 print(reduce(accumulator, (scores + my_numbers)))
+
+# Lambda Expressions
+
+# They are one time anonymous functions that you dont need to run more than once
+# Because they are used once, they dont need a name
+# Lambda param: action(param)
+
+# takes an item from 'scores' and multiplies it by two then automatically returns it
+print(list(map(lambda item: item*2, scores)))
+
+# 146-Exercise: Lambda Expressions
+
+# Square
+
+square_list = [5, 4, 3]
+
+print(list(map(lambda square: square**2, square_list)))
+
+# List Sorting
+
+sorting_list = [(0, 2), (4, 3), (9, 9), (10, -1)]
+
+# To iterate over each tuple. X is going to be the second value in the tuple
+sorting_list.sort(key=lambda x: x[1])

@@ -149,3 +149,54 @@ sorting_list = [(0, 2), (4, 3), (9, 9), (10, -1)]
 
 # To iterate over each tuple. X is going to be the second value in the tuple
 sorting_list.sort(key=lambda x: x[1])
+
+
+# Comprehensions
+
+# This can be done on lists, sets and dictionaries
+# A Quick way to create list, sets or dicts instead of looping or appending items
+
+#Lists =  [param for param in iterable]
+# First char can be how we want to act upon each item, like in Lambda
+comp_list = [char for char in 'hello']
+comp_list2 = [number for number in range(0, 100)]
+comp_list3 = [number*2 for number in range(0, 100)]
+comp_list4 = [number**2 for number in range(0, 100) if number % 2 == 0]
+
+print(comp_list)
+print(comp_list2)
+print(comp_list3)
+print(comp_list4)
+
+#Sets = {param for param in iterable}
+comp_set = {char for char in 'hello'}
+comp_set2 = {number for number in range(0, 100)}
+comp_set3 = {number*2 for number in range(0, 100)}
+
+# Dictionaries
+
+# First create simple dictionary in order for looping to work
+
+simple_dict = {
+    'a': 1,
+    'b': 2
+}
+
+comp_dict = {key: value**2 for key, value in simple_dict.items()}
+
+print(comp_dict)
+
+# If you dont have keys and want to make the iterables the keys
+comp_dict2 = {num: num**2 for num in [1, 2, 3]}
+print(comp_dict2)
+
+
+# 149-Exercise: Comprehensions
+
+prac_list = ['a', 'b', 'c', 'd', 'd', 'n', 'n']
+
+# count() is a method that tells us how many times an item appears in a list
+duplicates = list(set([dup for dup in prac_list if prac_list.count(dup) > 1]))
+
+
+print(duplicates)

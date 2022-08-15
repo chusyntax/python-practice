@@ -73,7 +73,7 @@ def authenticated(fn):
 # Sort of worked
 
 # Right answer:
-# if args[0]['valid']:
+# if args[0]['valid']: #0 is refering to the first argument which would be the key
 #        return fn(*args, **kwargs)
 
 

@@ -93,3 +93,13 @@ print(datetime.time())  # time(hours,minutes,seconds)
 
 arr = array('i', [1, 2, 3])
 print(arr[0])
+
+
+# Debugging
+
+# Act of removing or fixing errors/bugs in programs
+# Use linting
+# Use IDE/ Editor
+# Read errors
+# pdb ~ Python debugger
+# import pdp and use set_trace()

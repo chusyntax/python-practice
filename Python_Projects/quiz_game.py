@@ -29,7 +29,7 @@ else:
 
 
 answer = input("What does RAM stand for? ")
-if answer == "random access memory" or "Random Access Memory":
+if answer.lower() == "random access memory":
     print("You are correct!")
     score += 1
 else:
@@ -37,11 +37,16 @@ else:
 
 
 answer = input("What does PSU stand for? ")
-if answer == "power supply" or "Power Supply":
+if answer.lower() == "power supply":
     print("You are correct!")
+    score += 1
 else:
     print("Incorrect!")
-    score += 1
 
-print(f"You got {score} questions right!")
-print(f"That is {score/4 * 100} %. ")
+if score == 1:
+    print(f"You got one question right")
+    print("Thats 25% :(")
+
+else:
+    print(f"You got {score} questions right!")
+    print(f"That is {score/4 * 100} %. ")

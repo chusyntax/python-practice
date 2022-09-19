@@ -1,7 +1,7 @@
 import tweepy
 
 # config.py : where I keep my keys as constants
-#import config
+import config
 
 
 def about_me(client: tweepy.Client) -> None:

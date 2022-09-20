@@ -1,5 +1,3 @@
-# Scripting
+# Web Scraping
 
-# Image Processing Section
-
-# Can make pictures look nicer
+# Grabbing data from a website programatically

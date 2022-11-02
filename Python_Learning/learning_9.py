@@ -4,7 +4,7 @@ class PlayerCharacter:
     membership = True
 
     def __init__(self, name, age):
-        if(self.membership):
+        if (self.membership):
             self.name = name
             self.age = age
 
@@ -51,7 +51,7 @@ class PlayerCharacter:
 # Every class has (object) in its parameters by default
 
 # 4) Polymorphism (Many forms)
-# The way in whcih object classes share the same method name but act differently based on what pbject calls them
+# The way in whcih object classes share the same method name but act differently based on what object calls them
 # Allows us to have many forms and re-define methods
 # An object that gets instanciated can behave in diffrent ways due because of Polymorphism
 

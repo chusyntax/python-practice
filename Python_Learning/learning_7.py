@@ -1,3 +1,18 @@
+# Walrus Operator
+# Assigns values to variables as part of a larger expression
+# Use it in an expression when something is being evaluated
+
+a = 'helloooooooooo'
+
+if ((n := Len(a)) > 10):
+    # Remeber the extra pair of brackets because we eant to evaluate it first
+
+    print(f"too long {len(a)} elements")
+
+
+# Assigning the variable n whatever the outcome of (len(a)) is
+
+
 # Scope
 # Scope- What variables do I have access to
 

@@ -24,16 +24,19 @@ tup_list()
 
 # Question 5
 
-#Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.Suppose the following input is supplied to the program:
+#Define a class which has at least two methods:
 
-#34,67,55,33,12,98
-#Then, the output should be:
+#getString: to get a string from console input
+#printString: to print the string in upper case.
+#Also please include simple test function to test the class methods.
 
-#['34', '67', '55', '33', '12', '98']
-#('34', '67', '55', '33', '12', '98')
+class IOstring():
+    def get_string(self):
+        self.s = input()
 
+    def print_string(self):
+        print(self.s.upper())
 
-li = input().split(',')
-t = tuple(li)
-print(li)
-print(t)
+xx = IOstring()
+xx.get_string()
+xx.print_string()
